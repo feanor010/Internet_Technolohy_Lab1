@@ -35,6 +35,8 @@ const education = [
 ];
 
 function App() {
+  const avatarUrl = `${import.meta.env.BASE_URL}avatar.jpg`;
+
   return (
     <main className="page">
       <article className="resume">
@@ -50,7 +52,7 @@ function App() {
           </section>
           <aside className="me__photo-wrap">
             <img
-              src="/avatar.jpg"
+              src={avatarUrl}
               alt="Фото"
               className="me__photo"
             />
